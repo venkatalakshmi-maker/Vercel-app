@@ -1,921 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ITCO Website</title>
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body{
-      overflow-x:hidden;
-    }
-
-    /* TOPBAR */
-
-    .topbar{
-      background:#dff8f6;
-      padding:12px 0;
-      font-size:15px;
-    }
-
-    .topbar i{
-      margin-right:8px;
-      color:#0f172a;
-    }
-
-    .top-icons i{
-      margin-left:18px;
-      cursor:pointer;
-    }
-
-    /* NAVBAR */
-
-    .custom-navbar{
-      background:#0b1220;
-      border-radius:16px;
-      margin-top:15px;
-      padding:14px 20px;
-    }
-
-    .navbar-brand{
-      color:#fff;
-      font-size:38px;
-      font-weight:700;
-    }
-
-    .navbar-brand span{
-      color:#70d7b5;
-    }
-
-    .navbar-nav .nav-link{
-      color:#fff;
-      margin:0 12px;
-      font-weight:600;
-    }
-
-    .navbar-nav .nav-link:hover{
-      color:#70d7b5;
-    }
-
-    .quote-btn{
-      background:#3cbf95;
-      color:#fff;
-      padding:14px 28px;
-      border-radius:14px;
-      font-weight:700;
-      text-decoration:none;
-    }
-
-    /* HERO */
-
-    .hero{
-      background:
-      linear-gradient(rgba(212, 213, 216, 0.9), rgba(245, 246, 248, 0.9)),
-      background-image:url('image(7).png');
-      background-size:cover;
-      background-position:center;
-      background-repeat:no-repeat;
-      min-height:100vh;
-      color:white;
-      /* display:flex;
-      align-items:center; */
-      padding-top:120px;
-      padding:relative;
-      position:relative;
-    }
-
-
-
-    .hero-sub{
-      color:#43c193;
-      font-size:20px;
-      margin-bottom:20px;
-      font-weight:600;
-    }
-
-    .hero h1{
-      font-size:75px;
-      font-weight:800;
-      line-height:1.2;
-      margin-bottom:25px;
-    }
-
-    .hero p{
-      font-size:22px;
-      color:#d1d5db;
-      line-height:1.8;
-      margin-bottom:40px;
-    }
-
-    .read-btn{
-      background:#46c79b;
-      border:none;
-      color:#fff;
-      padding:16px 36px;
-      border-radius:16px;
-      font-size:20px;
-      font-weight:700;
-      margin-right:20px;
-    }
-
-    .play-btn{
-      width:70px;
-      height:70px;
-      border:2px solid #46c79b;
-      border-radius:18px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:30px;
-      color:#46c79b;
-    }
-
-    .play-text{
-      font-size:24px;
-      margin-left:18px;
-      font-weight:600;
-    }
-
-    .hero-image{
-      width:100%;
-      border-radius:0 80px 0 80px;
-      position:relative;
-      z-index:1;
-    }
-
-    /* ABOUT */
-
-    .about{
-      padding:120px 0;
-      background:#fff;
-    }
-
-    .about-sub{
-      color:#43c193;
-      font-size:22px;
-      font-weight:700;
-      margin-bottom:20px;
-    }
-
-    .about h2{
-      font-size:65px;
-      font-weight:800;
-      line-height:1.3;
-      color:#111827;
-      margin-bottom:30px;
-    }
-
-    .about p{
-      font-size:21px;
-      color:#4b5563;
-      line-height:1.9;
-      margin-bottom:30px;
-    }
-
-    .about-list{
-      list-style:none;
-      padding:0;
-    }
-
-    .about-list li{
-      margin-bottom:18px;
-      font-size:22px;
-      color:#1f2937;
-      font-weight:600;
-    }
-
-    .about-list i{
-      color:#43c193;
-      margin-right:12px;
-    }
-
-    .about-btn{
-      background:#46c79b;
-      color:#fff;
-      border:none;
-      padding:16px 38px;
-      border-radius:14px;
-      font-size:20px;
-      font-weight:700;
-      margin-top:25px;
-    }
-
-    .about-img-main{
-      width:100%;
-      border-radius:80px 0 80px 0;
-    }
-
-    .small-img{
-      width:250px;
-      border-radius:50%;
-      border:10px solid #fff;
-      position:absolute;
-      bottom:-40px;
-      right:30px;
-    }
-
-    .img-box{
-      position:relative;
-    }
-
-
-
-     .Services{
-      background:
-      linear-gradient(rgba(222, 223, 228, 0.9), rgba(247, 248, 252, 0.9)),
-      background-image:url('image(5).png');
-      background-size:cover;
-      background-position:center;
-      min-height:100vh;
-      color:#fff;
-      display:flex;
-      align-items:center;
-      padding:100px 0;
-    }
-
-    .Services-sub{
-      color:#43c193;
-      font-size:20px;
-      margin-bottom:20px;
-      font-weight:600;
-    }
-
-    .Services h1{
-      font-size:75px;
-      font-weight:800;
-      line-height:1.2;
-      margin-bottom:25px;
-    }
-
-    .Services p{
-      font-size:22px;
-      color:#d1d5db;
-      line-height:1.8;
-      margin-bottom:40px;
-    }
-
-    .Services-btn{
-      background:#46c79b;
-      border:none;
-      color:#fff;
-      padding:16px 36px;
-      border-radius:16px;
-      font-size:20px;
-      font-weight:700;
-      margin-right:20px;
-    }
-
-    .Services-title{
-        font-size:65px;
-        line-height:1.2;
-        font-weight:800;
-        color:#111827;
-        margin-bottom:30px;
-    }
-
-    .Services-text{
-        font-size:21px;
-        line-height:1.9;
-        color: gray;
-    }
-
-    .Service-btn:hover{
-        background:#17956e;
-    }
-
-    .Service-item{
-        display:flex;
-        justify-content: space-between;
-        align-items:center;
-        padding:35px 0;
-        border-bottom:1px solid #d1d5db;
-    }
-
-    .icon-box{
-        width:110px;
-        height:110px;
-        border:2px solid #7cdcc0;
-        border-radius:50%;
-        display:flex;
-        align-items:center;
-        justify-content: center;
-        font-size: 45px;
-        color:#49c79d;
-        margin-right:30px;
-
-    }
-    .Service-info h3{
-        font-size: 42px;
-        font-weight:800;
-        color:black;
-        margin-bottom:10px;
-    }
-
-    .Service-info p{
-        font-size:22px;
-        color:gray;
-    }
-
-    .Service-info p{
-        font-size:22px;
-        color:gray;
-    }
-
-    .arrow-icon{
-        font-size:35px;
-        color:black;
-    }
-
-/* 
-    @media(max-width:992px){
-        .Services-title{
-            font-size:45px;
-
-        }
-
-        .icon-box{
-            width:90px;
-            height:90px;
-            font-size:35px;
-        }
-
-        
-
-        .Services-info h3{
-            font-size:30px;
-        }
-
-        
-    }
-
-
-    @media(max-width:576px){
-        .Service-title{
-            font-size:36px;
-
-        }
-
-        .Service-item{
-            flex-direction:colun;
-            align-items:flex-start;
-            gap:20px;
-        }
-
-        .Service-info h3{
-            font-size:24px;
-        }
-
-        .Service-text,
-        .Service-info p{
-            font-size:18px;
-        }
-
-        .icon-box{
-            margin-right:20px;
-        }
-    }
-
-
-    */
-
-
-    .newsletter-section{
-        padding:120px 0;
-        background:white;
-
-    }
-
-    .newsletter-box{
-        overflow:hidden;
-        height:100%;
-    }
-
-    .newsletter-image img{
-        width:100%;
-        height:100%;
-        object-fit:cover;
-    }
-
-    .video-btn{
-        position:absolute;
-        top:50%;
-        left:50%;
-        transform translate{-50%,-50%};
-        width:90px;
-        height:90px;
-        background:#55c595;
-        border-radius:50%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:#fff;
-        font-size:30px;
-        cursor:pointer;
-    }
-
-    .newsletter-content{
-        background:linear-gradient(rgba(8,15,35,0.95),
-        rgba(8,15,35,0.95)),
-
-        url("image(16).png");
-        background-size:cover;
-        background-position:center;
-        color:white;
-        padding:80px 50px;
-        height:100%;
-    
-    }
-
-    .newsletter-content h2{
-        font-size:58px;
-        line-height:1.2;
-        font-weight:800;
-        margin-bottom:25px;
-    }
-
-    .newsletter-content p{
-        font-size:21px;
-        line-height:1.8;
-        color:white;
-        margin-bottom:40px;
-    }
-
-    .newsletter-form{
-        display:flex;
-        gap:15px;
-        flex-wrap:wrap;
-    }
-
-    .newspaper-form input{
-        flex:1;
-        padding:18px 20px;
-        border: none;
-        outline:none;
-        border-radius:12px;
-        font-size:18px;
-    }
-
-    .newsletter-form button{
-        background:#49c08f;
-        border:none;
-        color:white;
-        padding:18px 30px;
-        border-radius:12px;
-        font-size:18px;
-        transition:0.3s;
-
-    }
-
-    .newsletter-form button:hover{
-        background:#1f9d6e;
-    }
-
-
-    /* RESPONSIVE */
-
-    @media(max-width:992px){
-
-      .hero h1{
-        font-size:50px;
-      }
-
-      .about h2{
-        font-size:45px;
-      }
-
-      .hero-image{
-        margin-top:50px;
-      }
-
-      .small-img{
-        position:relative;
-        right:0;
-        bottom:0;
-        margin-top:20px;
-      }
-    }
-
-    @media(max-width:576px){
-
-      .hero h1{
-        font-size:40px;
-      }
-
-      .about h2{
-        font-size:34px;
-      }
-
-      .hero p,
-      .about p{
-        font-size:18px;
-      }
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home1</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- TOPBAR -->
-
-  <div class="topbar">
-    <div class="container">
-
-      <div class="row align-items-center">
-
-        <div class="col-lg-8 d-flex flex-wrap gap-4">
-          <div>
-            <i class="fa-solid fa-location-dot"></i>
-            Jones Street, New York, USA
-          </div>
-
-          <div>
-            <i class="fa-solid fa-envelope"></i>
-            info@example.com
-          </div>
-
-          <div>
-            <i class="fa-solid fa-phone"></i>
-            +70 264 566 579
-          </div>
+    
+    <div class="headerline">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Jones Street, New York, USA</span>
+        <span class="line">|</span>
+        <i class="fa-solid fa-envelope"></i>
+        <span>Info@example.com</span>
+        <span class="line">|</span>
+        <i class="fa-solid fa-phone"></i>
+        <span>+0123456789</span>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
         </div>
-
-        <div class="col-lg-4 text-end top-icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- NAVBAR -->
-
-  <div class="container">
-    <nav class="navbar navbar-expand-lg custom-navbar">
-
-      <a class="navbar-brand" href="#">
-        <span>◉</span> Itco
-      </a>
-
-      <button class="navbar-toggler bg-light"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navMenu">
-
-      <span class="navbar-toggler-icon"></span>
-
-      </button>
-
-      <div class="collapse navbar-collapse" id="navMenu">
-
-        <ul class="navbar-nav mx-auto">
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle"
-            href="#"
-            data-bs-toggle="dropdown">
-            Home
-            </a>
-
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Home One</a></li>
-              <li><a class="dropdown-item" href="#">Home Two</a></li>
-              <li><a class="dropdown-item" href="#">Home Three</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle"
-            href="#"
-            data-bs-toggle="dropdown">
-            Services
-            </a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle"
-            href="#"
-            data-bs-toggle="dropdown">
-            Pages
-            </a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle"
-            href="#"
-            data-bs-toggle="dropdown">
-            Blog
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-
-        </ul>
-
-        <a href="#" class="quote-btn">
-          Get A Free Quote
-        </a>
-
-      </div>
-    </nav>
-  </div>
-
-  <!-- HERO SECTION -->
-
-  <section class="hero">
-
-    <div class="container">
-
-      <div class="row align-items-center">
-
-        <div class="col-lg-6">
-
-          <div class="hero-sub">
-            IT solutions for the new era
-          </div>
-
-          <h1>
-            Beautiful IT services
-            for your success
-          </h1>
-
-          <p>
-            Leverage agile frameworks to provide a robust synopsis
-            for high level overviews iterative approaches bring table survival.
-          </p>
-
-          <div class="d-flex align-items-center flex-wrap">
-
-            <button class="read-btn">
-              Read More
-            </button>
-
-            <div class="d-flex align-items-center mt-3 mt-md-0">
-
-              <div class="play-btn">
-                <i class="fa-solid fa-play"></i>
-              </div>
-
-              <span class="play-text">
-                Play Intro
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-lg-6 hero-image">
-          <img src="images(1).png" class="hero-image img-fluid" alt="">
-        </div>
-
-      </div>
-
     </div>
 
-  </section>
-
-  <!-- ABOUT SECTION -->
-
-  <section class="about">
-
-    <div class="container">
-
-      <div class="row align-items-center">
-
-        <div class="col-lg-6">
-
-          <div class="img-box">
-
-            <img
-            src="images(9).png"
-            class="about-img-main"
-            alt="">
-
-            <img
-            src="images(10).png"
-            class="small-img"
-            alt="">
-
-          </div>
-
-        </div>
-
-        <div class="col-lg-6 mt-5 mt-lg-0">
-
-          <div class="about-sub">
-            About Your Company
-          </div>
-
-          <h2>
-            We Execute Our ideas
-            From The Start to Finish
-          </h2>
-
-          <p>
-            Solve business problems and automate workflows with
-            artificial intelligence-based solutions. Unlock the
-            hidden power of the data you already have.
-          </p>
-
-          <ul class="about-list">
-
-            <li>
-              <i class="fa-solid fa-square-check"></i>
-              Development of Financial Models
-            </li>
-
-            <li>
-              <i class="fa-solid fa-square-check"></i>
-              Nifty team is a diverse network of consultants
-            </li>
-
-            <li>
-              <i class="fa-solid fa-square-check"></i>
-              Industry professionals with a global mindset
-            </li>
-
-          </ul>
-
-          <button class="about-btn">
-            Read More
-          </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-<!-- Services------------ -->
-
-
-  <section class="Services-section py-5">
-
-    <div class="container">
-        
-        <div class="row align-items-start">
-            
-            <div class="col-lg-5 mb-5 mb-lg-0">
-                <div class="Services-sub">
-                    Our Latest Services
-                </div>
-
-                <h2 class="service-title">
-                   Our clients are the best at IT Management
-                </h2>
-
-                <p>
-                    Our Custom Software Design And Development Teams Can Design, Build, Test, And Deliver A Product That Fits Both Your Vision And With Market Demand.
-                    With Our Support, You Will Find Customers, Build Income And Attract New Investors..
-                </p>
-
-                <button class="Service-btn">
-                    View All Services
-                </button>
-
-          
-            </div>
-
-            <!-- Right content -->
-
-            <div class="col-lg-7">
-                <!-- Item 1 -->
-                <div class="service-item">
-                    <div class="d-flex align-items-center">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-deskop"></i>
-                        </div>
-
-                        <div class="service-info">
-                            <h3>Software Development</h3>
-                            <p>Indeed vanity excuse or mr lovers of on.</p>
-
-                        </div>
-
-                        <div class="arrow-icon">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </div>
-                    </div>
-
-                    <!-- Item2--------- -->
-                     <div class="service-item">
-                    <div class="d-flex align-items-center">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-deskop"></i>
-                        </div>
-
-                        <div class="service-info">
-                            <h3>Data Analysis</h3>
-                            <p>Indeed vanity excuse or mr lovers of on.</p>
-
-                        </div>
-
-                        <div class="arrow-icon">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </div>
-                    </div>
-
-                    <!-- Item3------- -->
-                     <div class="service-item border-bottom-0">
-                    <div class="d-flex align-items-center">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-mobile-screen"></i>
-                        </div>
-
-                        <div class="service-info">
-                            <h3>App Development</h3>
-                            <p>Indeed vanity excuse or mr lovers of on.</p>
-
-                        </div>
-
-                        <div class="arrow-icon">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          
-
-        </div>
-
-        <!-- <div class="col-lg-6 services-image">
-          <img src="images(1).png" alt="">
-        </div> -->
-
-      
-
-    </div>
-
-  </section>
    
-  <!-- NEWSLETTER SECTION -->
-  <section class="newsletter-section">
-    <div class="container">
-        <div class="row g-0 align-items-center newsletter-box">
-            <!-- left content -->
+    <div class="navbar-wrap">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="logo-image">
+                <span class="logo-text"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="has-dropdown">
+                    <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="home1.html">Home One</a></li>
+                        <li><a href="home2.html">Home Two</a></li>
+                        <li><a href="home3.html">Home Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-dropdown">
+                    <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="serviceDetails.html">Service Details</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="teamdetails.html">Team Details</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="projectdetails.html">Project Details</a></li>
+                        <li><a href="Testimonials.html">Testimonials</a></li>
+                        <li><a href="priceplan.html">Price Plan</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="404.html">404</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Blogdetails.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#"> contact </a>
+                    
+                </li>
+                <li>
+                    <button class="button">GET A FREE QUOTE</button>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-            <div class="col-lg-7">
-                
-                <div class="newsletter-image">
-                    <img src="images(16).png" class="img-fluid" alt="">
-
-                    <div class="video-btn">
+   
+    <div class="hero-section">
+        <div class="hero-left">
+            <p class="hero-tag">IT solutions for the new era</p>
+            <h1 class="hero-heading">Beautiful IT services<br>for your success</h1>
+            <p class="hero-sub">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches bring table survival.</p>
+            <div class="button-group">
+                <button class="read-btn">Read More</button>
+                <div class="play-section">
+                    <div class="play-btn">
                         <i class="fa-solid fa-play"></i>
                     </div>
+                    <span>Play Intro</span>
                 </div>
             </div>
+            <div class="team-members">
+                <div class="member-images">
+                    <img src="image (2).png" alt="member-1">
+                    <img src="image (3).png" alt="member-2">
+                    <img src="image (4).png" alt="member-3">
+                    <img src="image (5).png" alt="member-4">
+                    <img src="image (6).png" alt="member-5">
+                </div>
+                <div>
+                    <div class="member-count">36k+</div>
+                    <div class="member-label">Team Members</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="image (7).png" alt="hero-image">
+        </div>
+    </div>
 
-            <div class="col-lg-5">
-                <div class="newsletter-content">
-                    <h2>
-                        Subscribe to Our Newsletter
-                    </h2>
+  
+    <div class="about-section">
+        <div class="second-container">
+            <img src="image (9).png" alt="" class="img-1">
+            <img src="image (10).png" alt="" class="img-2">
+        </div>
+        <div class="about-content">
+            <p class="about-title">About Your Company</p>
+            <h1>We Execute Our Ideas<br>From The Start to Finish</h1>
+            <p class="about-text">Solve Business Problems And Automate Workflows With Artificial Intelligence-Based Solutions.</p>
+            <div class="about-points">
+                <p><i class="fa-solid fa-square-check"></i> Development of Financial Models</p>
+                <p><i class="fa-solid fa-square-check"></i> Nifty team is a diverse network of consultants</p>
+                <p><i class="fa-solid fa-square-check"></i> Industry professionals with a global mindset</p>
+            </div>
+            <button class="read-more-btn">Read More</button>
+        </div>
+    </div>
 
-                    <p>
-                        It is a long established fact that a reader will
-                        be distracted by the readable content of a page
-                        when looking at its layout.
-                    </p>
+   
+    <div class="ourservices">
+        <div class="service">
+            <h3 class="section-tag">Our latest services</h3>
+            <h1 class="section-heading">Our clients are the best at<br>IT Management</h1>
+            <p class="section-sub">Our Custom Software Design And Development Teams Can Design, Build, Test, And Deliver A Product That Fits Both Your Vision And With Market Demand. With Our Support, You Will Find Customers, Build Income And Attract New Investors.</p>
+            <button class="button-2">View All Services</button>
+        </div>
+        <div class="service-right">
+            <div class="service-item">
+                <div class="icon-circle outline">
+                    <img src="icon1.png" alt="Software Development" width="35">
+                </div>
+                <div class="service-info">
+                    <h2>Software Development</h2>
+                    <p>Indeed vanity excuse or mr lovers of on.</p>
+                </div>
+                <span class="arrow">↗</span>
+            </div>
+            <hr>
+            <div class="service-item">
+                <div class="icon-circle filled">
+                    <img src="your-icon2.png" alt="Data Analysis" width="35">
+                </div>
+                <div class="service-info">
+                    <h2>Data Analysis</h2>
+                    <p>Indeed vanity excuse or mr lovers of on.</p>
+                </div>
+                <span class="arrow">↗</span>
+            </div>
+            <hr>
+            <div class="service-item">
+                <div class="icon-circle outline">
+                    <img src="your-icon3.png" alt="App Development" width="35">
+                </div>
+                <div class="service-info">
+                    <h2>App Development</h2>
+                    <p>Indeed vanity excuse or mr lovers of on.</p>
+                </div>
+                <span class="arrow">↗</span>
+            </div>
+            <hr>
+            <div class="service-item">
+                <div class="icon-circle outline">
+                    <img src="icon2.png" alt="IT Consulting" width="35">
+                </div>
+                <div class="service-info">
+                    <h2>IT Consulting</h2>
+                    <p>Indeed vanity excuse or mr lovers of on.</p>
+                </div>
+                <span class="arrow">↗</span>
+            </div>
+        </div>
+    </div>
 
-                    <input type="email" placeholder="Enter Your Email">
 
-                    <button type="submit">
-                        Subscribe Now
-                    </button>
+    <div class="suscribe">
+        <img src="subsc.png" alt="subscribe-img">
+        <div class="subinfo">
+            <h1>Subscribe to Our Newsletter</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <div class="mail-box">
+                <input type="email" placeholder="Enter your email">
+                <button class="sub-btn">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+
+ 
+    <div class="project-section">
+        <div class="project-header">
+            <div class="project-title">
+                <h3 class="section-tag">Latest Project</h3>
+                <h1>Let's Look Our Global Projects</h1>
+            </div>
+            <div class="arrow-btns">
+                <a class="arrow-btn" href="#slide-1">&#8592;</a>
+                <a class="arrow-btn" href="#slide-2">&#8594;</a>
+            </div>
+        </div>
+        <div class="slider-wrapper">
+            <div class="projectinfo">
+                <div class="slide-group" id="slide-1">
+                    <div class="project-card">
+                        <img src="project1.png" alt="Project 1">
+                    </div>
+                    <div class="project-card">
+                        <img src="project2.png" alt="Project 2">
+                        <div class="card-label">
+                            <div>
+                                <h3>Project Development</h3>
+                                <p>IT Management</p>
+                            </div>
+                            <span class="card-arrow">&#8599;</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="project3.png" alt="Project 3">
+                    </div>
+                </div>
+                <div class="slide-group" id="slide-2">
+                    <div class="project-card">
+                        <img src="project1.png" alt="Project 1">
+                    </div>
+                    <div class="project-card">
+                        <img src="project2.png" alt="Project 2">
+                        <div class="card-label">
+                            <div>
+                                <h3>Project Development</h3>
+                                <p>IT Management</p>
+                            </div>
+                            <span class="card-arrow">&#8599;</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="project3.png" alt="Project 3">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <div class="business">
+        <div class="business-process">
+            <p class="section-tag">Business Process</p>
+            <h1 class="section-heading">Easy Way Build Success<br>your Business Plan</h1>
+            <p class="section-sub">Solve Business Problems And Automate Workflows With Artificial Intelligence-Based Solutions. Unlock The Hidden Power Of The Data You Already Have And Hand.</p>
+            <div class="progress-section">
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Productivity</span>
+                        <span class="badge">80%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width:80%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Digital Marketing</span>
+                        <span class="badge">75%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Technology</span>
+                        <span class="badge">90%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="width:90%"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="image-business">
+            <img src="subsc.png" alt="business-image">
+        </div>
+    </div>
+
+    
+    <div class="review">
+        <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-divider"></div>
+            <div class="stat-text">
+                <h2>200+</h2>
+                <p>Team Member</p>
+            </div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-handshake"></i></div>
+            <div class="stat-divider"></div>
+            <div class="stat-text">
+                <h2>25K+</h2>
+                <p>Complete Project</p>
+            </div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="stat-divider"></div>
+            <div class="stat-text">
+                <h2>18K+</h2>
+                <p>Client Review</p>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="pricing-section">
+        <p class="pricing-label">Our Pricing</p>
+        <h1 class="pricing-title">Find the Right Plan</h1>
+        <div class="pricing-cards">
+            <div class="pricing-card light">
+                <h3>Basic Plan</h3>
+                <div class="price"><sup>$</sup>110 <span>/Per Month</span></div>
+                <button class="discover-btn outline">Discover More</button>
+                <ul class="features">
+                    <li><i class="fa-solid fa-circle-check"></i> Key Words Optimized</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Top 10 Ranking Guarantee</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Weekly Reporting</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Key Words Optimized</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Top 10 Ranking Guarantee</li>
+                </ul>
+            </div>
+            <div class="pricing-card dark">
+                <p class="popular-tag">Popular</p>
+                <div class="price"><sup>$</sup>210 <span>/Per Month</span></div>
+                <button class="discover-btn filled">Discover More</button>
+                <ul class="features">
+                    <li><i class="fa-solid fa-circle-check"></i> Key Words Optimized</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Top 10 Ranking Guarantee</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Weekly Reporting</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Key Words Optimized</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Top 10 Ranking Guarantee</li>
+                </ul>
+            </div>
+            <div class="pricing-card light">
+                <h3>Custom</h3>
+                <div class="price"><sup>$</sup>310 <span>/Per Month</span></div>
+                <button class="discover-btn outline">Discover More</button>
+                <ul class="features">
+                    <li><i class="fa-solid fa-circle-check"></i> Key Words Optimized</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Top 10 Ranking Guarantee</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Weekly Reporting</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Key Words Optimized</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Top 10 Ranking Guarantee</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="brands-section">
+        <p>We have more than <span class="green-text">270+</span> Happy Customers<br>with satisfaction</p>
+        <div class="brand-logos">
+            <img src="brand1.png" alt="brand-1">
+            <img src="brand2.png" alt="brand-2">
+            <img src="brand3.png" alt="brand-3">
+            <img src="brand4.png" alt="brand-4">
+            <img src="brand5.png" alt="brand-5">
+        </div>
+    </div>
+
+   
+    <div class="testimonials-section">
+        <p class="testimonial-label">Clients Testimonials</p>
+        <h1>What Our Customers Say</h1>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <div class="testimonial-top">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <span class="quote-icon">&ldquo;</span>
+                </div>
+                <p>I requested a UI update gig and received an excellent job from Maria! A talented young UI/UX designer who will beat your expectations and give quick feedback. Will definitely work with again!</p>
+                <div class="reviewer">
+                    <img src="image (2).png" alt="Joshua">
+                    <div>
+                        <h4>Joshua Liddell</h4>
+                        <p>Company Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-top">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <span class="quote-icon">&ldquo;</span>
+                </div>
+                <p>I requested a UI update gig and received an excellent job from Maria! A talented young UI/UX designer who will beat your expectations and give quick feedback. Will definitely work with again!</p>
+                <div class="reviewer">
+                    <img src="image (3).png" alt="Arush">
+                    <div>
+                        <h4>Arush Aggarwal</h4>
+                        <p>Senior Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-top">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <span class="quote-icon">&ldquo;</span>
+                </div>
+                <p>I requested a UI update gig and received an excellent job from Maria! A talented young UI/UX designer who will beat your expectations and give quick feedback. Will definitely work with again!</p>
+                <div class="reviewer">
+                    <img src="image (4).png" alt="Rosy">
+                    <div>
+                        <h4>Rosy Flower Gaggero</h4>
+                        <p>CEO And Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="carousel-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+
+  
+    <div class="blogs-intro">
+        <p class="blog-label">Our Blogs</p>
+        <h1>Let the Checkout Our All</h1>
+        <div class="blog-section">
+            <div class="blog-left">
+                <img src="image (18).png" alt="blog-main">
+                <div class="blog-meta">
+                    <span><i class="fa-regular fa-user"></i> Admin</span>
+                    <span><i class="fa-regular fa-calendar"></i> October 2, 2023</span>
+                </div>
+                <h2>Everything you need to learn about IT Solution for your Company.</h2>
+            </div>
+            <div class="blog-right">
+                <div class="blog-item">
+                    <img src="image (19).png" alt="blog1">
+                    <div class="blog-item-info">
+                        <div class="blog-meta">
+                            <span><i class="fa-regular fa-user"></i> Admin</span>
+                            <span><i class="fa-regular fa-calendar"></i> Dec 27, 2023</span>
+                        </div>
+                        <h3>Everything you need to learn about IT Solution for your Company.</h3>
+                        <a href="#" class="read-more-link">Read More →</a>
+                    </div>
+                </div>
+                <hr class="blog-divider">
+                <div class="blog-item">
+                    <img src="image (20).png" alt="blog2">
+                    <div class="blog-item-info">
+                        <div class="blog-meta">
+                            <span><i class="fa-regular fa-user"></i> Admin</span>
+                            <span><i class="fa-regular fa-calendar"></i> Dec 27, 2023</span>
+                        </div>
+                        <h3>New Technology for System Security to improve security system</h3>
+                        <a href="#" class="read-more-link">Read More →</a>
+                    </div>
+                </div>
+                <hr class="blog-divider">
+                <div class="blog-item">
+                    <img src="image (21).png" alt="blog3">
+                    <div class="blog-item-info">
+                        <div class="blog-meta">
+                            <span><i class="fa-regular fa-user"></i> Admin</span>
+                            <span><i class="fa-regular fa-calendar"></i> Dec 27, 2023</span>
+                        </div>
+                        <h3>Analytical Solutions lorem ispsum take a trivial example.</h3>
+                        <a href="#" class="read-more-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="logo1.png" alt="logo" style="width:40px; filter: brightness(0) invert(1);">
+                    <span>Itco</span>
+                </div>
+                <p>Mauris ut enim sit amet lacus ornare ullamcorper. Praesent placerat neque purus rhoncus tincidunt odio ultrices. Sed odio feugiat feugiat felis.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Tech Solutions</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">IT Consulting</a></li>
+                    <li><a href="#">Data Analytics</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our Projects</a></li>
+                    <li><a href="#">Faq ask</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Recent Post</h3>
+                <div class="recent-post">
+                    <img src="project2.png" alt="post1">
+                    <div>
+                        <span><i class="fa-regular fa-calendar"></i> Dec 27, 2023</span>
+                        <p>Efficiency redefined through technology.</p>
+                    </div>
+                </div>
+                <div class="recent-post">
+                    <img src="project3.png" alt="post2">
+                    <div>
+                        <span><i class="fa-regular fa-calendar"></i> Dec 27, 2023</span>
+                        <p>IT Solution for your Company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span class="green-text">Qubohub</span> 2024. All Rights Reserved</p>
+        </div>
+    </footer>
 
 </body>
 </html>
