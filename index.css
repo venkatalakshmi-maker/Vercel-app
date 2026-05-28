@@ -18,33 +18,52 @@ body {
    TOP HEADER BAR
 ============================================================ */
 .headerline {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 40px;
     background: #0d4a4a;
     color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.headerline .line {
-    color: rgba(255,255,255,0.3);
+.container-header {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left i {
+    margin-right: 8px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.header-left .line {
+    margin: 0 20px;
+    color: rgba(255, 255, 255, 0.3);
     font-weight: 100;
-}
-
-.headerline i {
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .social-icons {
     display: flex;
     align-items: center;
-    gap: 14px;
-    margin-left: auto;
-    cursor: pointer;
+    gap: 18px;
 }
 
-.social-icons i:hover {
+.social-icons a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
     color: #00b074;
 }
 
@@ -52,21 +71,24 @@ body {
    NAVBAR
 ============================================================ */
 .navbar-wrap {
-    background: #fff;
+    background: #0d4a4a;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 12px 0;
 }
 
-.container {
+.navbar-wrap .container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 30px;
     width: 90%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 16px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -76,7 +98,8 @@ body {
 }
 
 .logo img {
-    width: 130px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .logo-text {
@@ -104,8 +127,20 @@ body {
     transition: color 0.2s;
 }
 
-.nav-menu li a:hover {
+.nav-menu li a:hover,
+.nav-menu li a.active {
     color: #00b074;
+}
+
+.nav-menu li a i {
+    font-size: 11px;
+    margin-left: 4px;
+    color: #00b074;
+    transition: transform 0.2s;
+}
+
+.nav-menu li:hover > a i {
+    transform: rotate(180deg);
 }
 
 /* Dropdown */
@@ -151,16 +186,17 @@ body {
     border: none;
     border-radius: 6px;
     color: white;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     cursor: pointer;
     letter-spacing: 0.5px;
-    transition: background 0.2s;
+    transition: background 0.2s, transform 0.2s;
     white-space: nowrap;
 }
 
 .button:hover {
     background-color: #009963;
+    transform: translateY(-2px);
 }
 
 /* ============================================================
@@ -171,14 +207,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 70px 8% 60px;
-    gap: 40px;
+    padding: 60px 8% 100px;
+    gap: 60px;
     min-height: 560px;
 }
 
 .hero-left {
-    flex: 1;
-    max-width: 560px;
+    flex: 1.1;
+    max-width: 580px;
 }
 
 .hero-tag {
@@ -208,7 +244,6 @@ body {
     display: flex;
     align-items: center;
     gap: 28px;
-    margin-bottom: 44px;
 }
 
 .read-btn {
@@ -220,11 +255,12 @@ body {
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.2s, transform 0.2s;
 }
 
 .read-btn:hover {
     background: #009963;
+    transform: translateY(-2px);
 }
 
 .play-section {
@@ -241,15 +277,16 @@ body {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: white;
+    border: 2px solid #00b074;
+    background: rgba(0, 176, 116, 0.12);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 0 8px rgba(255,255,255,0.15);
-    transition: transform 0.2s;
+    transition: background 0.2s, transform 0.2s, border-color 0.2s;
 }
 
 .play-btn:hover {
+    background: #00b074;
     transform: scale(1.08);
 }
 
@@ -257,40 +294,11 @@ body {
     color: #00b074;
     font-size: 16px;
     margin-left: 3px;
+    transition: color 0.2s;
 }
 
-.team-members {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.member-images {
-    display: flex;
-}
-
-.member-images img {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-    margin-left: -12px;
-}
-
-.member-images img:first-child {
-    margin-left: 0;
-}
-
-.member-count {
+.play-btn:hover i {
     color: white;
-    font-size: 22px;
-    font-weight: 800;
-}
-
-.member-label {
-    color: rgba(255,255,255,0.7);
-    font-size: 13px;
 }
 
 .hero-right {
@@ -299,11 +307,49 @@ body {
     justify-content: flex-end;
 }
 
-.hero-right img {
+.hero-image-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+.hero-image-wrapper img {
+    position: relative;
+    z-index: 3;
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: block;
     width: 100%;
     max-width: 520px;
     object-fit: cover;
-    border-radius: 16px;
+}
+
+.hero-image-outline {
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    right: 24px;
+    bottom: 24px;
+    border: 2.5px solid rgba(255, 255, 255, 0.2);
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hero-shape {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 280px;
+    height: 280px;
+    pointer-events: none;
 }
 
 /* ============================================================
@@ -1413,4 +1459,76 @@ body {
     padding: 20px 0;
     color: rgba(255,255,255,0.55);
     font-size: 14px;
+}
+
+/* ============================================================
+   PAGE HERO
+============================================================ */
+.page-hero {
+    background: #0d4a4a;
+    position: relative;
+    padding: 90px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.page-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-hero-bg svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-hero-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.page-title {
+    color: white;
+    font-size: 56px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.breadcrumbs a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+    color: #00b074;
+}
+
+.breadcrumbs .separator {
+    color: white;
+    font-size: 12px;
+}
+
+.breadcrumbs .current-page {
+    color: white;
 }

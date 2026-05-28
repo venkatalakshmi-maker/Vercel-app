@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home1</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Itco - Beautiful IT Services</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    
     <div class="headerline">
-        <i class="fa-solid fa-location-dot"></i>
-        <span>Jones Street, New York, USA</span>
-        <span class="line">|</span>
-        <i class="fa-solid fa-envelope"></i>
-        <span>Info@example.com</span>
-        <span class="line">|</span>
-        <i class="fa-solid fa-phone"></i>
-        <span>+0123456789</span>
-        <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
+        <div class="container-header">
+            <div class="header-left">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Jones Street, New York, USA</span>
+                <span class="line">|</span>
+                <i class="fa-solid fa-envelope"></i>
+                <span>Info@example.com</span>
+                <span class="line">|</span>
+                <i class="fa-solid fa-phone"></i>
+                <span>+70 264 566 579</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
     </div>
 
-   
     <div class="navbar-wrap">
         <div class="container">
             <div class="logo">
-                <img src="logo.png" alt="logo-image">
-                <span class="logo-text"></span>
+                <img src="image (1).png" alt="logo-image">
             </div>
             <ul class="nav-menu">
                 <li class="has-dropdown">
-                    <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                    <a href="#" class="active">Home <i class="fa-solid fa-chevron-down"></i></a>
                     <ul class="dropdown">
                         <li><a href="home1.html">Home One</a></li>
                         <li><a href="home2.html">Home Two</a></li>
@@ -73,12 +74,11 @@
                         <li><a href="Blogdetails.html">Blog Details</a></li>
                     </ul>
                 </li>
-                <li class="has-dropdown">
-                    <a href="#"> contact </a>
-                    
+                <li>
+                    <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <button class="button">GET A FREE QUOTE</button>
+                    <button class="button">Get A Free Quote</button>
                 </li>
             </ul>
         </div>
@@ -89,7 +89,7 @@
         <div class="hero-left">
             <p class="hero-tag">IT solutions for the new era</p>
             <h1 class="hero-heading">Beautiful IT services<br>for your success</h1>
-            <p class="hero-sub">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches bring table survival.</p>
+            <p class="hero-sub">Leverage agile frameworks to provide a robust synopsis for high level overviews terative approaches bring table survival.</p>
             <div class="button-group">
                 <button class="read-btn">Read More</button>
                 <div class="play-section">
@@ -99,22 +99,30 @@
                     <span>Play Intro</span>
                 </div>
             </div>
-            <div class="team-members">
-                <div class="member-images">
-                    <img src="image (2).png" alt="member-1">
-                    <img src="image (3).png" alt="member-2">
-                    <img src="image (4).png" alt="member-3">
-                    <img src="image (5).png" alt="member-4">
-                    <img src="image (6).png" alt="member-5">
-                </div>
-                <div>
-                    <div class="member-count">36k+</div>
-                    <div class="member-label">Team Members</div>
-                </div>
-            </div>
         </div>
         <div class="hero-right">
-            <img src="image (7).png" alt="hero-image">
+            <div class="hero-image-wrapper">
+                <div class="hero-shape">
+                    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="100" r="90" stroke="rgba(0, 176, 116, 0.18)" stroke-width="2.5"/>
+                        <mask id="circle-mask">
+                            <circle cx="100" cy="100" r="88" fill="white"/>
+                        </mask>
+                        <g mask="url(#circle-mask)">
+                            <path d="M -20,20 Q 40,0 100,20 T 220,20" stroke="rgba(0, 176, 116, 0.18)" stroke-width="2.5" fill="none" />
+                            <path d="M -20,45 Q 40,25 100,45 T 220,45" stroke="rgba(0, 176, 116, 0.18)" stroke-width="2.5" fill="none" />
+                            <path d="M -20,70 Q 40,50 100,70 T 220,70" stroke="rgba(0, 176, 116, 0.18)" stroke-width="2.5" fill="none" />
+                            <path d="M -20,95 Q 40,75 100,95 T 220,95" stroke="rgba(0, 176, 116, 0.18)" stroke-width="2.5" fill="none" />
+                            <path d="M -20,120 Q 40,100 100,120 T 220,120" stroke="rgba(0, 176, 116, 0.18)" stroke-width="2.5" fill="none" />
+                            <path d="M -20,145 Q 40,125 100,145 T 220,145" stroke="rgba(0, 176, 116, 0.18)" stroke-width="2.5" fill="none" />
+                            <path d="M -20,170 Q 40,150 100,170 T 220,170" stroke="rgba(0, 176, 116, 0.18)" stroke-width="2.5" fill="none" />
+                            <path d="M -20,195 Q 40,175 100,195 T 220,195" stroke="rgba(0, 176, 116, 0.18)" stroke-width="2.5" fill="none" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="hero-image-outline"></div>
+                <img src="image (7).png" alt="hero-image">
+            </div>
         </div>
     </div>
 
@@ -138,129 +146,129 @@
     </div>
 
    
-    <div class="ourservices">
-        <div class="service">
-            <h3 class="section-tag">Our latest services</h3>
-            <h1 class="section-heading">Our clients are the best at<br>IT Management</h1>
-            <p class="section-sub">Our Custom Software Design And Development Teams Can Design, Build, Test, And Deliver A Product That Fits Both Your Vision And With Market Demand. With Our Support, You Will Find Customers, Build Income And Attract New Investors.</p>
-            <button class="button-2">View All Services</button>
-        </div>
-        <div class="service-right">
-            <div class="service-item">
-                <div class="icon-circle outline">
-                    <img src="icon1.png" alt="Software Development" width="35">
-                </div>
-                <div class="service-info">
-                    <h2>Software Development</h2>
-                    <p>Indeed vanity excuse or mr lovers of on.</p>
-                </div>
-                <span class="arrow">↗</span>
-            </div>
-            <hr>
-            <div class="service-item">
-                <div class="icon-circle filled">
-                    <img src="your-icon2.png" alt="Data Analysis" width="35">
-                </div>
-                <div class="service-info">
-                    <h2>Data Analysis</h2>
-                    <p>Indeed vanity excuse or mr lovers of on.</p>
-                </div>
-                <span class="arrow">↗</span>
-            </div>
-            <hr>
-            <div class="service-item">
-                <div class="icon-circle outline">
-                    <img src="your-icon3.png" alt="App Development" width="35">
-                </div>
-                <div class="service-info">
-                    <h2>App Development</h2>
-                    <p>Indeed vanity excuse or mr lovers of on.</p>
-                </div>
-                <span class="arrow">↗</span>
-            </div>
-            <hr>
-            <div class="service-item">
-                <div class="icon-circle outline">
-                    <img src="icon2.png" alt="IT Consulting" width="35">
-                </div>
-                <div class="service-info">
-                    <h2>IT Consulting</h2>
-                    <p>Indeed vanity excuse or mr lovers of on.</p>
-                </div>
-                <span class="arrow">↗</span>
-            </div>
-        </div>
-    </div>
+     <div class="ourservices">
+         <div class="service">
+             <h3 class="section-tag">Our latest services</h3>
+             <h1 class="section-heading">Our clients are the best at<br>IT Management</h1>
+             <p class="section-sub">Our Custom Software Design And Development Teams Can Design, Build, Test, And Deliver A Product That Fits Both Your Vision And With Market Demand. With Our Support, You Will Find Customers, Build Income And Attract New Investors.</p>
+             <button class="button-2">View All Services</button>
+         </div>
+         <div class="service-right">
+             <div class="service-item">
+                 <div class="icon-circle outline">
+                     <i class="fa-solid fa-code" style="font-size: 24px; color: #00b074;"></i>
+                 </div>
+                 <div class="service-info">
+                     <h2>Software Development</h2>
+                     <p>Indeed vanity excuse or mr lovers of on.</p>
+                 </div>
+                 <span class="arrow">↗</span>
+             </div>
+             <hr>
+             <div class="service-item">
+                 <div class="icon-circle filled">
+                     <i class="fa-solid fa-chart-line" style="font-size: 24px; color: #fff;"></i>
+                 </div>
+                 <div class="service-info">
+                     <h2>Data Analysis</h2>
+                     <p>Indeed vanity excuse or mr lovers of on.</p>
+                 </div>
+                 <span class="arrow">↗</span>
+             </div>
+             <hr>
+             <div class="service-item">
+                 <div class="icon-circle outline">
+                     <i class="fa-solid fa-mobile-screen-button" style="font-size: 24px; color: #00b074;"></i>
+                 </div>
+                 <div class="service-info">
+                     <h2>App Development</h2>
+                     <p>Indeed vanity excuse or mr lovers of on.</p>
+                 </div>
+                 <span class="arrow">↗</span>
+             </div>
+             <hr>
+             <div class="service-item">
+                 <div class="icon-circle outline">
+                     <i class="fa-solid fa-briefcase" style="font-size: 24px; color: #00b074;"></i>
+                 </div>
+                 <div class="service-info">
+                     <h2>IT Consulting</h2>
+                     <p>Indeed vanity excuse or mr lovers of on.</p>
+                 </div>
+                 <span class="arrow">↗</span>
+             </div>
+         </div>
+     </div>
 
 
-    <div class="suscribe">
-        <img src="subsc.png" alt="subscribe-img">
-        <div class="subinfo">
-            <h1>Subscribe to Our Newsletter</h1>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-            <div class="mail-box">
-                <input type="email" placeholder="Enter your email">
-                <button class="sub-btn">Subscribe Now</button>
-            </div>
-        </div>
-    </div>
+     <div class="suscribe">
+         <img src="image (14).png" alt="subscribe-img">
+         <div class="subinfo">
+             <h1>Subscribe to Our Newsletter</h1>
+             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+             <div class="mail-box">
+                 <input type="email" placeholder="Enter your email">
+                 <button class="sub-btn">Subscribe Now</button>
+             </div>
+         </div>
+     </div>
 
  
-    <div class="project-section">
-        <div class="project-header">
-            <div class="project-title">
-                <h3 class="section-tag">Latest Project</h3>
-                <h1>Let's Look Our Global Projects</h1>
-            </div>
-            <div class="arrow-btns">
-                <a class="arrow-btn" href="#slide-1">&#8592;</a>
-                <a class="arrow-btn" href="#slide-2">&#8594;</a>
-            </div>
-        </div>
-        <div class="slider-wrapper">
-            <div class="projectinfo">
-                <div class="slide-group" id="slide-1">
-                    <div class="project-card">
-                        <img src="project1.png" alt="Project 1">
-                    </div>
-                    <div class="project-card">
-                        <img src="project2.png" alt="Project 2">
-                        <div class="card-label">
-                            <div>
-                                <h3>Project Development</h3>
-                                <p>IT Management</p>
-                            </div>
-                            <span class="card-arrow">&#8599;</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="project3.png" alt="Project 3">
-                    </div>
-                </div>
-                <div class="slide-group" id="slide-2">
-                    <div class="project-card">
-                        <img src="project1.png" alt="Project 1">
-                    </div>
-                    <div class="project-card">
-                        <img src="project2.png" alt="Project 2">
-                        <div class="card-label">
-                            <div>
-                                <h3>Project Development</h3>
-                                <p>IT Management</p>
-                            </div>
-                            <span class="card-arrow">&#8599;</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="project3.png" alt="Project 3">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+     <div class="project-section">
+         <div class="project-header">
+             <div class="project-title">
+                 <h3 class="section-tag">Latest Project</h3>
+                 <h1>Let's Look Our Global Projects</h1>
+             </div>
+             <div class="arrow-btns">
+                 <a class="arrow-btn" href="#slide-1">&#8592;</a>
+                 <a class="arrow-btn" href="#slide-2">&#8594;</a>
+             </div>
+         </div>
+         <div class="slider-wrapper">
+             <div class="projectinfo">
+                 <div class="slide-group" id="slide-1">
+                     <div class="project-card">
+                         <img src="image (11).png" alt="Project 1">
+                     </div>
+                     <div class="project-card">
+                         <img src="image (12).png" alt="Project 2">
+                         <div class="card-label">
+                             <div>
+                                 <h3>Project Development</h3>
+                                 <p>IT Management</p>
+                             </div>
+                             <span class="card-arrow">&#8599;</span>
+                         </div>
+                     </div>
+                     <div class="project-card">
+                         <img src="image (13).png" alt="Project 3">
+                     </div>
+                 </div>
+                 <div class="slide-group" id="slide-2">
+                     <div class="project-card">
+                         <img src="image (11).png" alt="Project 1">
+                     </div>
+                     <div class="project-card">
+                         <img src="image (12).png" alt="Project 2">
+                         <div class="card-label">
+                             <div>
+                                 <h3>Project Development</h3>
+                                 <p>IT Management</p>
+                             </div>
+                             <span class="card-arrow">&#8599;</span>
+                         </div>
+                     </div>
+                     <div class="project-card">
+                         <img src="image (13).png" alt="Project 3">
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
 
-   
-    <div class="business">
+    
+     <div class="business">
         <div class="business-process">
             <p class="section-tag">Business Process</p>
             <h1 class="section-heading">Easy Way Build Success<br>your Business Plan</h1>
@@ -289,10 +297,10 @@
                 </div>
             </div>
         </div>
-        <div class="image-business">
-            <img src="subsc.png" alt="business-image">
-        </div>
-    </div>
+         <div class="image-business">
+             <img src="image (22).png" alt="business-image">
+         </div>
+     </div>
 
     
     <div class="review">
@@ -493,7 +501,7 @@
         <div class="footer-main">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="logo1.png" alt="logo" style="width:40px; filter: brightness(0) invert(1);">
+                    <img src="image (1).png" alt="logo" style="width:40px; filter: brightness(0) invert(1);">
                     <span>Itco</span>
                 </div>
                 <p>Mauris ut enim sit amet lacus ornare ullamcorper. Praesent placerat neque purus rhoncus tincidunt odio ultrices. Sed odio feugiat feugiat felis.</p>
@@ -528,14 +536,14 @@
             <div class="footer-col">
                 <h3>Recent Post</h3>
                 <div class="recent-post">
-                    <img src="project2.png" alt="post1">
+                    <img src="image (12).png" alt="post1">
                     <div>
                         <span><i class="fa-regular fa-calendar"></i> Dec 27, 2023</span>
                         <p>Efficiency redefined through technology.</p>
                     </div>
                 </div>
                 <div class="recent-post">
-                    <img src="project3.png" alt="post2">
+                    <img src="image (13).png" alt="post2">
                     <div>
                         <span><i class="fa-regular fa-calendar"></i> Dec 27, 2023</span>
                         <p>IT Solution for your Company.</p>
