@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details - Itco</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"><link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+    <!-- TOP HEADER BAR -->
+    <div class="headerline">
+        <div class="container-header">
+            <div class="header-left">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Jones Street, New York, USA</span>
+                <span class="line">|</span>
+                <i class="fa-solid fa-envelope"></i>
+                <span>Info@example.com</span>
+                <span class="line">|</span>
+                <i class="fa-solid fa-phone"></i>
+                <span>+70 264 566 579</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="navbar-wrap">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="Public/Images/site-logo.jpg" alt="logo-image" style="height:44px;">
+            </div>
+            <ul class="nav-menu">
+                <li class="has-dropdown">
+                    <a href="index.html">Home <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home One</a></li>
+                        <li><a href="#">Home Two</a></li>
+                        <li><a href="#">Home Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-dropdown">
+                    <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="serviceDetails.html">Service Details</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Team Details</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Project Details</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Price Plan</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">404</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="blog.html" class="active">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blogdetails.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="nav-btn">Get A Free Quote</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero-bg">
+            <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="100%">
+                <line x1="1440" y1="320" x2="200" y2="0" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+                <line x1="1440" y1="320" x2="400" y2="0" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+                <line x1="1440" y1="320" x2="600" y2="0" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+                <line x1="1440" y1="320" x2="800" y2="0" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+                <line x1="1440" y1="320" x2="1000" y2="0" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+                <line x1="1440" y1="320" x2="1200" y2="0" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+                <line x1="1440" y1="320" x2="0" y2="100" stroke="rgba(255,255,255,0.03)" stroke-width="1.5"/>
+                <line x1="1440" y1="320" x2="0" y2="280" stroke="rgba(255,255,255,0.03)" stroke-width="1.5"/>
+            </svg>
+        </div>
+        <div class="page-hero-inner">
+            <h1 class="page-hero-title">Blog Details</h1>
+            <nav class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="current">Blog Details</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- BLOG DETAILS SECTION -->
+    <section class="blog-section">
+        <div class="blog-container">
+
+            <!-- LEFT: Blog Detail Content -->
+            <div class="blog-posts">
+
+                <!-- Main Post Image -->
+                <div class="detail-main-img">
+                    <img src="Public/Images/blog1.jpg" alt="Blog Detail">
+                </div>
+
+                <!-- Post Meta -->
+                <div class="detail-meta">
+                    <span><i class="fa-regular fa-user"></i> Admin</span>
+                    <span><i class="fa-regular fa-calendar"></i> October 2, 2023</span>
+                    <span><i class="fa-regular fa-comment"></i> Comment (03)</span>
+                </div>
+
+                <!-- Post Title -->
+                <h2 class="detail-title">Everything you need to learn about IT Solution for your Company.</h2>
+
+                <!-- Post Content -->
+                <div class="detail-content">
+                    <p>With over a decade of experience, we've established ourselves as one of the pioneering agencies in the region. Our small, flexible, agile and design-led structures and processes allow us to be highly responsive and innovative. We're made of passionate leaders, strategists, managers, developers, animators designer who work together under one umbrella. We are a digitally-led, full-service creative agency.</p>
+
+                    <p>The European languag are member of the same family. Their separate existence is a myth. Europe same science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their samepronunciation and their most common words.</p>
+
+                    <!-- Blockquote -->
+                    <blockquote class="detail-quote">
+                        <span class="quote-icon"><i class="fa-solid fa-quote-right"></i></span>
+                        <p>Majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable "</p>
+                    </blockquote>
+
+                    <p>Everyone realizes why a new common language would be desirable: one could refuse to necessary have uniform translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more words. If several languages coalesce, the grammar of the resulting language is simple and regular than that of the individual languages. The new common language will be more simple and regular than the existin languages samepronunciation and their most common words.</p>
+
+                    <h4>Perfect From Beginning to End</h4>
+
+                    <p>Transfer details Choose the amount you want to send abroad, select how your receiver wants to get the money, and lastly, how you want to pay. You will always see our fees upfront, the final amount you will pay, and the exact amount your receiver will get.</p>
+
+                    <ul class="detail-list">
+                        <li><span class="dot"></span> Aliquam Eros Justo, Posuere Loborti Robart That</li>
+                        <li><span class="dot"></span> Fermentum Ullamcorper Viverra Laoreet</li>
+                        <li><span class="dot"></span> Lobortis, Viverra Laoreet Augue Attis Hrculies</li>
+                        <li><span class="dot"></span> Fermentum Ullamcorper Viverra Laoreet</li>
+                    </ul>
+                </div>
+
+                <!-- Tags & Share -->
+                <div class="detail-tag-share">
+                    <div class="detail-tags">
+                        <span class="label">Tag:</span>
+                        <a href="#" class="tag-link">#Technology</a>
+                        <a href="#" class="tag-link">#IT Business</a>
+                    </div>
+                    <div class="detail-share">
+                        <span class="label">Share:</span>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Author Box -->
+                <div class="author-box">
+                    <img src="Public/Images/author.jpg" alt="Ronald Richards">
+                    <div class="author-info">
+                        <div class="author-top-row">
+                            <div>
+                                <h4>Ronald Richards</h4>
+                                <span class="author-role">Founder & CEO</span>
+                            </div>
+                            <div class="author-socials">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <p>Delicate and specialty items are handled with the utmost care. We have specialized processes for such items to ensure they are cleaned gently and returned to you in pristine condition.</p>
+                    </div>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="comments-section">
+                    <h3>Comments (03)</h3>
+
+                    <div class="comment-list">
+
+                        <!-- Comment 1 - Brooklyn -->
+                        <div class="comment-item">
+                            <img src="Public/Images/comment1.jpg" alt="Brooklyn Simmons">
+                            <div class="comment-body">
+                                <div class="comment-header">
+                                    <h5>Brooklyn Simmons</h5>
+                                    <span class="comment-date"><i class="fa-regular fa-calendar"></i> 28 April, 2023</span>
+                                    <a href="#" class="reply-btn">REPLY <i class="fa-solid fa-reply"></i></a>
+                                </div>
+                                <p>There are many different types of roofing materials to choose from, including asphalt shingles, Metal roofing, wood shakes, clay tiles, and slate. Each material has its</p>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 - Marvin (indented reply) -->
+                        <div class="comment-item comment-indent">
+                            <img src="Public/Images/comment3.jpg" alt="Marvin McKinney">
+                            <div class="comment-body">
+                                <div class="comment-header">
+                                    <h5>Marvin McKinney</h5>
+                                    <span class="comment-date"><i class="fa-regular fa-calendar"></i> 20 October, 2023</span>
+                                    <a href="#" class="reply-btn">REPLY <i class="fa-solid fa-reply"></i></a>
+                                </div>
+                                <p>Is a statement that highlights the importance of providing high-quality auto repair services. It suggests that the company or individual</p>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 - Ronald -->
+                        <div class="comment-item">
+                            <img src="Public/Images/comment3.jpg" alt="Ronald Richards">
+                            <div class="comment-body">
+                                <div class="comment-header">
+                                    <h5>Ronald Richards</h5>
+                                    <span class="comment-date"><i class="fa-regular fa-calendar"></i> 06 June, 2023</span>
+                                    <a href="#" class="reply-btn">REPLY <i class="fa-solid fa-reply"></i></a>
+                                </div>
+                                <p>There are many different types of roofing materials to choose from, including asphalt shingles, Metal roofing, wood shakes, clay tiles, and slate. Each material has its</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Add Comment Form -->
+                <div class="add-comment">
+                    <h3>Add Your Comment</h3>
+                    <p>Get in touch with us to see how we can help you with your project</p>
+                    <div class="comment-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                        </div>
+                        <textarea placeholder="Enter Message..."></textarea>
+                        <button class="submit-btn">Submit Now</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: Sidebar -->
+            <aside class="blog-sidebar">
+
+                <!-- Search -->
+                <div class="sidebar-widget search-widget">
+                    <h4>Search</h4>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="sidebar-widget categories-widget">
+                    <h4>Categories</h4>
+                    <ul class="category-list">
+                        <li><a href="#">Content Management <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="#">Information Security <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="#">Software Development <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="#">Web Analysis <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="#">Digital Marketing <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="#">Tech Support Pro <i class="fa-solid fa-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Recent Posts -->
+                <div class="sidebar-widget recent-widget">
+                    <h4>Recent Posts</h4>
+                    <div class="recent-post-item">
+                        <img src="Public/Images/recent1.jpg" alt="recent1">
+                        <div class="recent-post-info">
+                            <span><i class="fa-regular fa-calendar"></i> Oct 2, 2023</span>
+                            <h5><a href="#">Efficiency redefined through technology.</a></h5>
+                        </div>
+                    </div>
+                    <div class="recent-post-item">
+                        <img src="Public/Images/recent2.jpg" alt="recent2">
+                        <div class="recent-post-info">
+                            <span><i class="fa-regular fa-calendar"></i> Oct 2, 2023</span>
+                            <h5><a href="#">IT Solution for your Company.</a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="sidebar-widget tags-widget">
+                    <h4>Tags</h4>
+                    <div class="tags-cloud">
+                        <a href="#" class="tag">Interiour</a>
+                        <a href="#" class="tag">Software</a>
+                        <a href="#" class="tag">Design</a>
+                        <a href="#" class="tag">Web Planting</a>
+                        <a href="#" class="tag">Daily Inspiration</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="sidebar-widget newsletter-widget">
+                    <h4>Subscribe to Our Newsletter for the daily Updates</h4>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email...">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </section>
+
+    <!-- FOOTER NEWSLETTER STRIP -->
+    <div class="footer-sub-strip">
+        <p>Subscribe to Our Newsletter for the daily Updates</p>
+        <div class="footer-sub-form">
+            <input type="email" placeholder="Enter Your Email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+                            <circle cx="20" cy="20" r="20" fill="#0D3B2E"/>
+                            <path d="M20 8 L32 20 L20 32 L8 20 Z" fill="none" stroke="#00B074" stroke-width="2"/>
+                            <path d="M20 8 L20 32" stroke="#fff" stroke-width="2.5"/>
+                            <path d="M8 20 L32 20" stroke="#00B074" stroke-width="2.5"/>
+                            <circle cx="20" cy="20" r="4" fill="#00B074"/>
+                        </svg>
+                    </div>
+                    <span class="footer-logo-text">Itco</span>
+                </div>
+                <p>Mauris ut enim sit amet lacus ornare ullamcorper. Praesent placerat neque purus rhoncus tincidunt odio ultrices. Sed odio feugiat feugiat felis.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Tech Solutions</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">IT Consulting</a></li>
+                    <li><a href="#">Data Analytics</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our Projects</a></li>
+                    <li><a href="#">Faq ask</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Recent Post</h4>
+                <div class="recent-posts">
+                    <div class="recent-post">
+                        <img src="Public/Images/footer-post1.jpg" alt="post1">
+                        <div class="post-info">
+                            <div class="post-date"><i class="fa-regular fa-calendar"></i> Dec 27, 2023</div>
+                            <p>Efficiency redefined through technology.</p>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <img src="Public/Images/footer-post2.jpg" alt="post2">
+                        <div class="post-info">
+                            <div class="post-date"><i class="fa-regular fa-calendar"></i> Dec 27, 2023</div>
+                            <p>IT Solution for your Company.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span class="green">Qubohub</span> 2024. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <div class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+
+</body>
+</html>
+
+

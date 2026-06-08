@@ -1,0 +1,249 @@
+.business {
+    display: flex;
+    align-items: stretch;
+    min-height: 500px;
+}
+
+.business-process {
+    background-color: #e8f5f0;
+    width: 55%;
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.business-process .section-tag {
+    margin-bottom: 12px;
+}
+
+.business-process .section-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.business-process .section-sub {
+    margin-bottom: 36px;
+}
+
+.progress-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.progress-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.badge {
+    background-color: #1a3a3a;
+    color: white;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: #c8e6c9;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #00b074;
+    border-radius: 3px;
+}
+
+.image-business {
+    width: 45%;
+    overflow: hidden;
+}
+
+.image-business img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.review {
+    background-color: #0d4a4a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 8%;
+    gap: 0;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex: 1;
+    justify-content: center;
+}
+
+.stat-icon i {
+    font-size: 50px;
+    color: #00b074;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 80px;
+    background: rgba(255,255,255,0.2);
+    margin: 0 20px;
+}
+
+.stat-text h2 {
+    color: white;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.stat-text p {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+}
+
+
+
+.testimonials-section {
+    padding: 80px 8%;
+    background: #fff;
+    text-align: center;
+}
+
+.testimonial-label {
+    color: #00b074;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.testimonials-section h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+/* FIX: renamed from .testimonial-row to .testimonial-cards */
+.testimonial-cards {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-card {
+    background: #e8f5f0;
+    border-radius: 12px;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    min-height: 380px;
+}
+
+.testimonial-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 28px 10px;
+}
+
+.stars {
+    color: #00b074;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.quote-icon {
+    font-size: 70px;
+    color: rgba(0,176,116,0.2);
+    line-height: 1;
+}
+
+.testimonial-card > p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #333;
+    padding: 0 28px 28px;
+    text-align: left;
+}
+
+.reviewer {
+    background: #00b074;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 28px;
+    margin-top: auto;
+}
+
+.reviewer img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.reviewer h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+.reviewer p {
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+/* FIX: renamed from .dots/.dot to .carousel-indicators/button */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 36px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+    padding: 0;
+    transition: width 0.2s, background 0.2s;
+}
+
+.carousel-indicators button.active {
+    width: 32px;
+    border-radius: 10px;
+    background: #00b074;
+}
