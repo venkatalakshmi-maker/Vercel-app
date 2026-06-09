@@ -1,0 +1,250 @@
+/* ============================================================
+   PROJECT PAGE CSS
+   Uses index.css for: headerline, navbar, footer, page-hero
+   This file only adds project grid + newsletter strip
+============================================================ */
+
+/* ===== PROJECTS SECTION ===== */
+.proj-section {
+  padding: 80px 0 90px;
+  background: #fff;
+}
+
+.proj-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.proj-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.proj-tag {
+  display: inline-block;
+  color: #00b074;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.proj-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111;
+}
+
+/* ===== GRID ===== */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* ===== CARD ===== */
+.proj-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proj-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,176,116,0.18);
+}
+
+/* ===== IMAGE WRAPPER ===== */
+.proj-img {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.proj-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.proj-card:hover .proj-img img {
+  transform: scale(1.05);
+}
+
+/* ===== SLIDE-UP HOVER OVERLAY ===== */
+.proj-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00b074;
+  padding: 20px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  /* slide from bottom */
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.proj-card:hover .proj-hover {
+  transform: translateY(0);
+}
+
+.proj-hover-info .proj-cat {
+  display: block;
+  color: rgba(255,255,255,0.85);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+
+.proj-hover-info p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.proj-arrow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.proj-arrow:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* ===== CARD FOOTER (visible by default) ===== */
+.proj-foot {
+  padding: 16px 20px;
+  border-top: 1px solid #eee;
+}
+
+.proj-foot .proj-cat {
+  display: inline-block;
+  color: #00b074;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.proj-foot .proj-cat:hover {
+  color: #009963;
+}
+
+.proj-foot p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== NEWSLETTER STRIP ===== */
+.footer-sub-strip {
+  background: #00b074;
+  padding: 40px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-sub-strip p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  max-width: 420px;
+  line-height: 1.4;
+}
+
+.footer-sub-form {
+  display: flex;
+  gap: 0;
+  flex: 1;
+  max-width: 480px;
+  min-width: 260px;
+}
+
+.footer-sub-form input {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+  outline: none;
+  font-family: 'Manrope', sans-serif;
+}
+
+.footer-sub-form button {
+  background: #0d4a4a;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 0 6px 6px 0;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+  font-family: 'Manrope', sans-serif;
+}
+
+.footer-sub-form button:hover {
+  background: #083535;
+}
+
+/* ===== BACK TO TOP ===== */
+.back-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  background: #00b074;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 16px rgba(0,176,116,0.35);
+  transition: background 0.2s, transform 0.2s;
+  z-index: 999;
+}
+
+.back-top:hover {
+  background: #009963;
+  transform: translateY(-3px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .proj-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .proj-grid { grid-template-columns: 1fr; }
+  .proj-header h2 { font-size: 30px; }
+  .footer-sub-strip { flex-direction: column; }
+  .footer-sub-strip p { font-size: 18px; }
+}
